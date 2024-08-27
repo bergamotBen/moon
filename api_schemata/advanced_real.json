@@ -1,0 +1,101 @@
+{
+  "timestamp": 1724792346,
+  "datestamp": "Tue, 27 Aug 2024 22:59:06 +0200",
+  "plan": "BASIC",
+  "sun": {
+    "sunrise": 1724731380,
+    "sunrise_timestamp": "06:03",
+    "sunset": 1724781480,
+    "sunset_timestamp": "19:58",
+    "solar_noon": "13:01",
+    "day_length": "13:55",
+    "sun_altitude": -23.228567633390657,
+    "sun_distance": 151184350.33680847,
+    "sun_azimuth": 327.42408533666446,
+    "next_solar_eclipse": {
+      "timestamp": 1727887573,
+      "datestamp": "Wed, 02 Oct 2024 18:46:13 +0200",
+      "type": "Annular Solar Eclipse",
+      "visibility_regions": "Pacific, s South America ; [Annular: s Chile, s Argentina]"
+    }
+  },
+  "moon": {
+    "phase": 0.7682744415663061,
+    "phase_name": "Waning Crescent",
+    "stage": "waning",
+    "illumination": "44%",
+    "age_days": 23,
+    "lunar_cycle": "76.83%",
+    "emoji": "\ud83c\udf18",
+    "zodiac": { "sun_sign": "Virgo", "moon_sign": "Gemini" },
+    "moonrise": "22:35",
+    "moonrise_timestamp": 1724790900,
+    "moonset": "15:22",
+    "moonset_timestamp": 1724764920,
+    "moon_altitude": 3.2150302405808873,
+    "moon_distance": 378805.79193316994,
+    "moon_azimuth": 48.93824097039169,
+    "moon_parallactic_angle": -31.691452865918478,
+    "next_lunar_eclipse": {
+      "timestamp": 1726620326,
+      "datestamp": "Wed, 18 Sep 2024 02:45:26 +0200",
+      "type": "Partial Lunar Eclipse",
+      "visibility_regions": "Americas, Europe, Africa"
+    }
+  },
+  "moon_phases": {
+    "new_moon": {
+      "last": {
+        "timestamp": 1722722400,
+        "datestamp": "Sun, 04 Aug 2024 00:00:00 +0200",
+        "days_ago": 23
+      },
+      "next": {
+        "timestamp": 1725314400,
+        "datestamp": "Tue, 03 Sep 2024 00:00:00 +0200",
+        "days_ahead": 6
+      }
+    },
+    "first_quarter": {
+      "last": {
+        "timestamp": 1723413600,
+        "datestamp": "Mon, 12 Aug 2024 00:00:00 +0200",
+        "days_ago": 15
+      },
+      "next": {
+        "timestamp": 1726005600,
+        "datestamp": "Wed, 11 Sep 2024 00:00:00 +0200",
+        "days_ahead": 14
+      }
+    },
+    "full_moon": {
+      "last": {
+        "timestamp": 1724018400,
+        "datestamp": "Mon, 19 Aug 2024 00:00:00 +0200",
+        "days_ago": 8,
+        "name": "Sturgeon Moon",
+        "description": "Marks the time when sturgeon fish are most easily caught."
+      },
+      "next": {
+        "timestamp": 1726610400,
+        "datestamp": "Wed, 18 Sep 2024 00:00:00 +0200",
+        "days_ahead": 21,
+        "name": "Harvest Moon",
+        "description": "Refers to the full moon closest to the autumnal equinox, signalling the time to harvest crops."
+      }
+    },
+    "last_quarter": {
+      "last": {
+        "timestamp": 1724623200,
+        "datestamp": "Mon, 26 Aug 2024 00:00:00 +0200",
+        "days_ago": 1
+      },
+      "next": {
+        "timestamp": 1727128800,
+        "datestamp": "Tue, 24 Sep 2024 00:00:00 +0200",
+        "days_ahead": 27
+      }
+    }
+  },
+  "location": { "latitude": 51.5, "longitude": 0 }
+}
