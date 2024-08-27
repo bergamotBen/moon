@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "phase_name": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "days_until_next_full_moon": {
+      "type": "integer"
+    },
+    "days_until_next_new_moon": {
+      "type": "integer"
+    }
+  }
+}
