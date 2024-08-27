@@ -52,6 +52,3 @@ class Advanced(models.Model):
     moon_moon_phase_full_moon_next_description = models.CharField(max_length=500)
     location_latitude = models.FloatField()
     location_longitude = models.FloatField()
-
-
-

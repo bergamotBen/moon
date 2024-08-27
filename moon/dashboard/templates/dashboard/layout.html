@@ -8,9 +8,10 @@
   </head>
   <body>
     <nav>
-      <a href="/1">dashboard</a>
-      <a href="/sun/1">sun</a>
-      <a href="/moon/1">moon</a>
+      <a href={% url 'index' %}>Home</a>
+      <a href={% url 'basic' count%}>Basic</a>
+      <a href={% url 'sun' count%}>Sun</a>
+      <a href={% url 'moon' count%}>Moon</a>
     </nav>
     <main>{% block content %} {% endblock %}</main>
   </body>

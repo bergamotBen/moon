@@ -5,24 +5,31 @@ from django.shortcuts import render
 from .controllers import create_basic_dict, create_sun_dict, create_moon_dict
 
 def index(request):
-    return render(request, 'dashboard/dashboard.html')
+    context = dict()
+    context["count"] = Advanced.objects.count()
+    return render(request, 'dashboard/dashboard.html', context)
 
 def basic(request, advanced_id):
     context = create_basic_dict(advanced_id)
+    context["count"] = Advanced.objects.count()
     return render(request, "dashboard/basic.html", context)
 
 def sun(request, advanced_id):
     context = create_sun_dict(advanced_id)
+    context["count"] = Advanced.objects.count()
     return render(request, "dashboard/sun.html", context)
 
 def moon(request, advanced_id):
     context = create_moon_dict(advanced_id)
+    context["count"] = Advanced.objects.count()
     return render(request, "dashboard/moon.html", context)
 
 def eclipses(request, advanced_id):
     advanced = Advanced.objects.get(id=advanced_id)
     context = {"advanced" : advanced.moon_phase_name,
                "moon_age": advanced.moon_phase_age_days}
+    context["count"] = Advanced.objects.count()
+    
     return render(request, "dashboard/eclipses.html", context)
 
 
