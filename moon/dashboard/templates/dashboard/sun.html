@@ -1,3 +1,7 @@
+{% extends 'dashboard/layout.html' %} {% block title%} Sun {% endblock %}
+<a></a>
+{% block content %}
+<h2>sun</h2>
 <ul>
   <li>{{timestamp}}</li>
   <li>{{sunrise_timestamp}}</li>
@@ -7,3 +11,4 @@
   <li>{{latitude}}</li>
   <li>{{longitude}}</li>
 </ul>
+{% endblock %}

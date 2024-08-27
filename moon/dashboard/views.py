@@ -5,7 +5,7 @@ from django.shortcuts import render
 from .controllers import create_basic_dict, create_sun_dict, create_moon_dict
 
 def index(request):
-    return HttpResponse("This is the dashboard")
+    return render(request, 'dashboard/dashboard.html')
 
 def basic(request, advanced_id):
     context = create_basic_dict(advanced_id)

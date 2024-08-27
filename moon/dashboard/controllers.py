@@ -1,6 +1,10 @@
 # These controllers create dictionaries which supply the context to the views
 from .models import Advanced
 
+def timestamp_to_hhmm(timestamp):
+    pass
+def timestamp_to_ddmmhhmm(timestamp):
+    pass
 
 def create_basic_dict(id):
     basic_context = dict()
