@@ -1,0 +1,106 @@
+{
+  "timestamp": 1709719280,
+  "datestamp": "Wed, 06 Mar 2024 11:01:20 +0100",
+  "sun": {
+    "sunrise": 1709703180,
+    "sunrise_timestamp": "06:33",
+    "sunset": 1709743800,
+    "sunset_timestamp": "17:50",
+    "solar_noon": "12:11",
+    "day_length": "11:17",
+    "sun_altitude": 25.696792056571674,
+    "sun_distance": 148352130.9293265,
+    "sun_azimuth": 140.52986028290508,
+    "next_solar_eclipse": {
+      "timestamp": 1712593109,
+      "datestamp": "Mon, 08 Apr 2024 18:18:29 +0200",
+      "type": "Total Solar Eclipse",
+      "visibility_regions": "North America, C. America ; [Total: Mexico, c US, e Canada]"
+    }
+  },
+  "moon": {
+    "phase": 0.837753757700032,
+    "phase_name": "Waning Crescent",
+    "stage": "waning",
+    "illumination": "24%",
+    "age_days": 26,
+    "lunar_cycle": "83.78%",
+    "emoji": "🌘",
+    "zodiac": {
+      "sun_sign": "Pisces",
+      "moon_sign": "Capricorn"
+    },
+    "moonrise": "05:08",
+    "moonrise_timestamp": 1709698080,
+    "moonset": "12:04",
+    "moonset_timestamp": 1709723040,
+    "moon_altitude": 10.025242934004638,
+    "moon_distance": 368969.2956608348,
+    "moon_azimuth": 196.73288357551496,
+    "moon_parallactic_angle": 11.600628626391506,
+    "next_lunar_eclipse": {
+      "timestamp": 1711347240,
+      "datestamp": "Mon, 25 Mar 2024 07:14:00 +0100",
+      "type": "Penumbral Lunar Eclipse",
+      "visibility_regions": "Americas"
+    }
+  },
+  "moon_phases": {
+    "new_moon": {
+      "last": {
+        "timestamp": 1707433200,
+        "datestamp": "Fri, 09 Feb 2024 00:00:00 +0100",
+        "days_ago": 26
+      },
+      "next": {
+        "timestamp": 1710025200,
+        "datestamp": "Sun, 10 Mar 2024 00:00:00 +0100",
+        "days_ahead": 3
+      }
+    },
+    "first_quarter": {
+      "last": {
+        "timestamp": 1708038000,
+        "datestamp": "Fri, 16 Feb 2024 00:00:00 +0100",
+        "days_ago": 19
+      },
+      "next": {
+        "timestamp": 1710630000,
+        "datestamp": "Sun, 17 Mar 2024 00:00:00 +0100",
+        "days_ahead": 10
+      }
+    },
+    "full_moon": {
+      "last": {
+        "timestamp": 1708729200,
+        "datestamp": "Sat, 24 Feb 2024 00:00:00 +0100",
+        "days_ago": 11,
+        "name": "Snow Moon",
+        "description": "Reflects the cold snowy weather of this month."
+      },
+      "next": {
+        "timestamp": 1711321200,
+        "datestamp": "Mon, 25 Mar 2024 00:00:00 +0100",
+        "days_ahead": 18,
+        "name": "Worm Moon",
+        "description": "Indicates the return of earthworms and the beginning of spring."
+      }
+    },
+    "last_quarter": {
+      "last": {
+        "timestamp": 1709420400,
+        "datestamp": "Sun, 03 Mar 2024 00:00:00 +0100",
+        "days_ago": 3
+      },
+      "next": {
+        "timestamp": 1712008800,
+        "datestamp": "Tue, 02 Apr 2024 00:00:00 +0200",
+        "days_ahead": 26
+      }
+    }
+  },
+  "location": {
+    "latitude": 51.4768,
+    "longitude": -0.0004
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "integer"
+    },
+    "datestamp": {
+      "type": "string"
+    },
+    "sun": {
+      "type": "object",
+      "properties": {
+        "sunrise": {
+          "type": "integer"
+        },
+        "sunrise_timestamp": {
+          "type": "string"
+        },
+        "sunset": {
+          "type": "integer"
+        },
+        "sunset_timestamp": {
+          "type": "string"
+        },
+        "solar_noon": {
+          "type": "string"
+        },
+        "day_length": {
+          "type": "string"
+        },
+        "sun_altitude": {
+          "type": "number"
+        },
+        "sun_distance": {
+          "type": "number"
+        },
+        "sun_azimuth": {
+          "type": "number"
+        },
+        "next_solar_eclipse": {
+          "type": "object",
+          "properties": {
+            "timestamp": {
+              "type": "integer"
+            },
+            "datestamp": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "visibility_regions": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "moon": {
+      "type": "object",
+      "properties": {
+        "phase": {
+          "type": "number"
+        },
+        "phase_name": {
+          "type": "string"
+        },
+        "stage": {
+          "type": "string"
+        },
+        "illumination": {
+          "type": "string"
+        },
+        "age_days": {
+          "type": "integer"
+        },
+        "lunar_cycle": {
+          "type": "string"
+        },
+        "emoji": {
+          "type": "string"
+        },
+        "zodiac": {
+          "type": "object",
+          "properties": {
+            "sun_sign": {
+              "type": "string"
+            },
+            "moon_sign": {
+              "type": "string"
+            }
+          }
+        },
+        "moonrise": {
+          "type": "string"
+        },
+        "moonrise_timestamp": {
+          "type": "integer"
+        },
+        "moonset": {
+          "type": "string"
+        },
+        "moonset_timestamp": {
+          "type": "integer"
+        },
+        "moon_altitude": {
+          "type": "number"
+        },
+        "moon_distance": {
+          "type": "number"
+        },
+        "moon_azimuth": {
+          "type": "number"
+        },
+        "moon_parallactic_angle": {
+          "type": "number"
+        },
+        "next_lunar_eclipse": {
+          "type": "object",
+          "properties": {
+            "timestamp": {
+              "type": "integer"
+            },
+            "datestamp": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "visibility_regions": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "moon_phases": {
+      "type": "object",
+      "properties": {
+        "new_moon": {
+          "type": "object",
+          "properties": {
+            "last": {
+              "type": "object",
+              "properties": {
+                "timestamp": {
+                  "type": "integer"
+                },
+                "datestamp": {
+                  "type": "string"
+                },
+                "days_ago": {
+                  "type": "integer"
+                }
+              }
+            },
+            "next": {
+              "type": "object",
+              "properties": {
+                "timestamp": {
+                  "type": "integer"
+                },
+                "datestamp": {
+                  "type": "string"
+                },
+                "days_ahead": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        },
+        "first_quarter": {
+          "type": "object",
+          "properties": {
+            "last": {
+              "type": "object",
+              "properties": {
+                "timestamp": {
+                  "type": "integer"
+                },
+                "datestamp": {
+                  "type": "string"
+                },
+                "days_ago": {
+                  "type": "integer"
+                }
+              }
+            },
+            "next": {
+              "type": "object",
+              "properties": {
+                "timestamp": {
+                  "type": "integer"
+                },
+                "datestamp": {
+                  "type": "string"
+                },
+                "days_ahead": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        },
+        "full_moon": {
+          "type": "object",
+          "properties": {
+            "last": {
+              "type": "object",
+              "properties": {
+                "timestamp": {
+                  "type": "integer"
+                },
+                "datestamp": {
+                  "type": "string"
+                },
+                "days_ago": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            },
+            "next": {
+              "type": "object",
+              "properties": {
+                "timestamp": {
+                  "type": "integer"
+                },
+                "datestamp": {
+                  "type": "string"
+                },
+                "days_ahead": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "last_quarter": {
+          "type": "object",
+          "properties": {
+            "last": {
+              "type": "object",
+              "properties": {
+                "timestamp": {
+                  "type": "integer"
+                },
+                "datestamp": {
+                  "type": "string"
+                },
+                "days_ago": {
+                  "type": "integer"
+                }
+              }
+            },
+            "next": {
+              "type": "object",
+              "properties": {
+                "timestamp": {
+                  "type": "integer"
+                },
+                "datestamp": {
+                  "type": "string"
+                },
+                "days_ahead": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}
