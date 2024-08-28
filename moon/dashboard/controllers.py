@@ -1,10 +1,23 @@
 # These controllers create dictionaries which supply the context to the views
 from .models import Advanced
+from datetime import datetime
 
 def timestamp_to_hhmm(timestamp):
-    pass
-def timestamp_to_ddmmhhmm(timestamp):
-    pass
+    converted_timestamp = datetime.fromtimestamp(timestamp)
+    return f"{converted_timestamp.hour}:{converted_timestamp.minute}"
+def timestamp_to_ddmm(timestamp):
+    days = [(1, '1st'), (21, "21st"), (31, "31st"), (2, "2nd"), (22, "22nd", (3, "3rd"), (23, "23rd"))]   
+    months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+    converted_timestamp = datetime.fromtimestamp(timestamp)
+
+    for day in days:
+        ordinal = str()
+        if day[0] == converted_timestamp.day:
+            ordinal += day[1]
+        else:
+            ordinal += f"{converted_timestamp.day}th"
+
+    return f"{ordinal} {months[converted_timestamp.month-1]}"
 
 def create_basic_dict(id):
     basic_context = dict()

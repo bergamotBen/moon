@@ -38,6 +38,7 @@ def eclipses(request, advanced_id):
     return render(request, "dashboard/eclipses.html", context)
 
 def update(request):
+    # turn this into a cron job
     def create_record():
         url = "https://moon-phase.p.rapidapi.com/advanced"
 
