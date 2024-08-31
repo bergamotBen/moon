@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from . import views
 from .models import Advanced
 from django.shortcuts import render
-from .controllers import create_basic_dict, create_sun_dict, create_moon_dict
+from .controllers import create_basic_dict, create_sun_dict, create_moon_dict, moon_image_selector
 import requests
 from django.http import JsonResponse
 from dotenv import load_dotenv
@@ -27,6 +27,7 @@ def sun(request, advanced_id):
 def moon(request, advanced_id):
     context = create_moon_dict(advanced_id)
     context["count"] = Advanced.objects.count()
+
     return render(request, "dashboard/moon.html", context)
 
 def eclipses(request, advanced_id):

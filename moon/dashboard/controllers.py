@@ -3,8 +3,6 @@ from .models import Advanced
 from datetime import datetime
 import math
 
-import math
-
 def moon_image_selector(days_to_new_moon):
     filestring = "moon_"
     if days_to_new_moon == 30:
@@ -43,6 +41,7 @@ def create_basic_dict(id):
     basic_context["next_full_moon"] = request.moon_moon_phase_full_moon_next_datestamp
     basic_context["latitude"] = request.location_latitude
     basic_context["longitude"] = request.location_longitude
+    basic_context["moon_age_days"] = request.moon_phase_age_days
 
     return basic_context
 
@@ -74,7 +73,7 @@ def create_moon_dict(id):
     moon_context["azimuth"] = request.moon_moon_azimuth
     moon_context["latitude"] = request.location_latitude
     moon_context["longitude"] = request.location_longitude
-
+    moon_context["moon_image"] = moon_image_selector(moon_context["phase_age"])
     return moon_context
 
 
