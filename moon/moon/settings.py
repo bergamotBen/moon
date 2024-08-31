@@ -124,6 +124,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "moon/static"
 ]
+
+# STATIC_ROOT = "/Users/beniorns/projects/moon/moon/moon"
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 

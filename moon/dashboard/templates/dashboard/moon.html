@@ -4,18 +4,18 @@
 <a></a>
 {% block content %}
 <h2>Moon</h2>
-<ul>
+<ul class="inconsolata">
   <li><a> {{timestamp}}</a></li>
-  <li><a> {{moonrise}}</a></li>
-  <li><a> {{moonset}}</a></li>
-  <li><a> {{phase_name}} </a></li>
-  <li><a> {{phase_stage}}</a></li>
-  <li><a> {{phase_age}}</a></li>
+  <li><a> Moonrise: {{moonrise}}</a></li>
+  <li><a> Moonset: {{moonset}}</a></li>
+  <li><a> Phase name: {{phase_name}} </a></li>
+  <li><a> Phase stage: {{phase_stage}}</a></li>
+  <li><a> Age in days: {{phase_age}}</a></li>
   <li><a> {{emoji}}</a></li>
-  <li><a> {{next_full_moon}}</a></li>
-  <li><a> {{azimuth}}</a></li>
-  <li><a> {{latitude}}</a></li>
-  <li><a> {{longitude}}</a></li>
+  <li><a> Next full moon: {{next_full_moon}}</a></li>
+  <li><a> Azimuth {{azimuth}}</a></li>
+  <li><a> Lat.: {{latitude}}</a></li>
+  <li><a> Long.: {{longitude}}</a></li>
 </ul>
 <img src="{% static moon_image %}" width="200" height="200" /> <a></a>
 {% endblock %}
