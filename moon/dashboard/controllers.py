@@ -1,10 +1,21 @@
 # These controllers create dictionaries which supply the context to the views
 from .models import Advanced
 from datetime import datetime
+import math
 
+import math
+
+def moon_image_selector(days_to_new_moon):
+    filestring = "moon_"
+    if days_to_new_moon == 30:
+        return filestring + "24.jpg"
+    else:
+        return (filestring + str(math.ceil((days_to_new_moon/29)*24)) + ".jpg")
+    
 def timestamp_to_hhmm(timestamp):
     converted_timestamp = datetime.fromtimestamp(timestamp)
     return f"{converted_timestamp.hour}:{converted_timestamp.minute}"
+
 def timestamp_to_ddmm(timestamp):
     days = [(1, '1st'), (21, "21st"), (31, "31st"), (2, "2nd"), (22, "22nd", (3, "3rd"), (23, "23rd"))]   
     months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
