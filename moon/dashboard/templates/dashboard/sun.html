@@ -1,14 +1,15 @@
 {% extends 'dashboard/layout.html' %} {% block title%} Sun {% endblock %}
 <a></a>
 {% block content %}
-<h2>Sun</h2>
-<ul>
-  <li>{{timestamp}}</li>
-  <li>{{sunrise_timestamp}}</li>
-  <li>{{sunset_timestamp}}</li>
-  <li>{{day_length}}</li>
-  <li>{{sun_azimuth}}</li>
-  <li>{{latitude}}</li>
-  <li>{{longitude}}</li>
-</ul>
+<main>
+  <h2>Sun</h2>
+  <p>Sunrise: {{sunrise_timestamp}}</p>
+  <p>Sunset: {{sunset_timestamp}}</p>
+  <p>Day length: {{day_length}}</p>
+  <ul>
+    <li>{{latitude}}</li>
+    <li>{{longitude}}</li>
+  </ul>
+  <p>Last updated {{timestamp}}</p>
+</main>
 {% endblock %}

@@ -1,0 +1,44 @@
+body {
+  font-family: "Inconsolata", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #e8eddf;
+  background-color: black;
+  letter-spacing: 0.5pt;
+  padding: 0px;
+}
+
+nav {
+  font-size: 16pt;
+  border-bottom: solid #cfdbd5 3px;
+  padding: 5px;
+}
+
+a:link {
+  color: #cfdbd5;
+  text-decoration: none;
+  transition: all 1s linear;
+}
+
+a:visited {
+  color: #cfdbd5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f5cb5c;
+  text-decoration: underline;
+  transition: all 1s linear;
+}
+
+main {
+  width: 66%;
+  margin: auto;
+}
+.moon_div {
+  margin: auto;
+  width: 66%;
+  padding: 5px;
+}

@@ -1,21 +1,18 @@
-{% extends 'dashboard/layout.html' %} {% block title%} Moon {% endblock %}
-<a></a>
-{% load static %}
-<a></a>
-{% block content %}
-<h2>Moon</h2>
-<ul class="inconsolata">
-  <li><a> {{timestamp}}</a></li>
-  <li><a> Moonrise: {{moonrise}}</a></li>
-  <li><a> Moonset: {{moonset}}</a></li>
-  <li><a> Phase name: {{phase_name}} </a></li>
-  <li><a> Phase stage: {{phase_stage}}</a></li>
-  <li><a> Age in days: {{phase_age}}</a></li>
-  <li><a> {{emoji}}</a></li>
-  <li><a> Next full moon: {{next_full_moon}}</a></li>
-  <li><a> Azimuth {{azimuth}}</a></li>
-  <li><a> Lat.: {{latitude}}</a></li>
-  <li><a> Long.: {{longitude}}</a></li>
-</ul>
-<img src="{% static moon_image %}" width="200" height="200" /> <a></a>
+{% extends 'dashboard/layout.html' %}{% load static %} {% block content %}
+<main>
+  <div class="moon_div">
+    <img class="moon" src="{% static moon_image %}" width="200" height="200" />
+  </div>
+  <h2>{{phase_name}}: day {{phase_age}}</h2>
+  <p>Moonrise: {{moonrise}}</p>
+  <ul>
+    <li>Azimuth: {{azimuth}}</li>
+    <li>Lat.: {{latitude}}</li>
+    <li>Long.: {{longitude}}</li>
+  </ul>
+  <p>Moonset: {{moonset}}</p>
+  <p>Next full moon: {{next_full_moon}}</p>
+
+  <p>Last updated {{timestamp}}</p>
+</main>
 {% endblock %}

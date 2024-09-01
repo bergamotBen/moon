@@ -4,14 +4,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" /> 
-    <title>{% block title %} Moon {% endblock %}</title>
+    <link rel="stylesheet" href='{% static 'styles.css' %}'> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200&family=Atkinson+Hyperlegible&family=Figtree:ital,wght@0,700;1,700&family=Flow+Block&family=Inconsolata&family=Major+Mono+Display&family=Mansalva&family=Merriweather&family=Nanum+Pen+Script&family=Quattrocento&family=Roboto+Mono:ital,wght@1,500&family=Rozha+One&family=Sen&family=Space+Mono:ital@0;1&family=Staatliches&display=swap" rel="stylesheet">
+    <title>{% block title %} Moon {{emoji}} {% endblock %}</title>
     <script src="{% static 'js/main.js' %}" defer></script>
   </head>
   <body>
     <nav>
       <a href={% url 'index' %}>Home</a>
-      <a href={% url 'basic' count%}>Basic</a>
       <a href={% url 'sun' count%}>Sun</a>
       <a href={% url 'moon' count%}>Moon</a>
     </nav>
