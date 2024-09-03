@@ -34,6 +34,8 @@ def eclipses(request, advanced_id):
     return render(request, "dashboard/eclipses.html", context)
 
 def update(request):
+    api_key = os.environ.get('API_KEY')
+    print(api_key[8::])
     # turn this into a cron job
     def create_record():
         url = "https://moon-phase.p.rapidapi.com/advanced"
@@ -41,7 +43,7 @@ def update(request):
         querystring = {"lat":"51.4583","lon":"-2.5591"}
 
         headers = {
-            "x-rapidapi-key": os.environ.get('API_KEY'),
+            "x-rapidapi-key": api_key[8::],
             "x-rapidapi-host": "moon-phase.p.rapidapi.com"
     }
 

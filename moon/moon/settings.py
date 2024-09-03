@@ -28,8 +28,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['98a7f3dc-3ca8-4139-86a8-1a7b334d27a7-00-26s0vvmzao91e.picard.replit.dev']
 
+CSRF_TRUSTED_ORIGINS = ['https://98a7f3dc-3ca8-4139-86a8-1a7b334d27a7-00-26s0vvmzao91e.picard.replit.dev']
 
 # Application definition
 
